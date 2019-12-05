@@ -83,7 +83,7 @@ class FilteredList extends Component {
                 <Dropdown.Item key="statDescending" eventKey="statDescending" onSelect={this.onSelectSortType}>{Constants.POKEMON_SORT_CRITERIA["statDescending"]}</Dropdown.Item>
                 <Dropdown.Item key="statAscending" eventKey="statAscending" onSelect={this.onSelectSortType}>{Constants.POKEMON_SORT_CRITERIA["statAscending"]}</Dropdown.Item>
             </DropdownButton>
-            <input type="text" placeholder="Search" onChange={this.onSearch} />
+            <input type="text" placeholder="Search by Name" onChange={this.onSearch} />
             <h5>Showing <strong>{this.state.type}</strong> Type Pokemon with <strong>{Constants.POKEMON_STATS_FULL[this.state.highestStat]}</strong> as highest base stat, sorted by <strong>{Constants.POKEMON_SORT_CRITERIA[this.state.sortby]}</strong>.</h5>
             <p>Tip: click on a Pokemon to toggle its shiny form!</p>
           </div>
