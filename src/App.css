@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(./pokemon_wallpaper.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+.pinned-content {
+  padding-top: 30px;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: #333333;
+  color: white;
+  z-index: 99 !important;
+}
+
+h1 { 
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+}
+.pinned-content h5, .pinned-content h1 {
+  padding: 10px;
+}
+.pinned-content h5 {
+  padding-bottom: 0px;
+}
+
+.pokemon-list {
+  margin: 0 auto;
+  padding-left: 10vw;
+  padding-right: 11vw;
+  padding-top: 220px;
+  min-height: 101vh;
+}
+
+.pokemon {
+  padding: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #333333;
+  opacity: 0.95;
+  color: white;
+  width: 180px;
+  height: 285px;
+  margin: 25px;
+  border-radius: 20px;
+}
+
+.pokemon-list li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pokemon img {
+  width: 110px;
+  height: 110px;
+}
+
+img.type {
+  width: initial;
+  height: initial;
+  margin: 2px;
+}
+
+.dropdown {
+  display: inline;
+  margin: 60px;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
