@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0eb2ff0a9ddb5368bdcf300bdae3586",
+    "revision": "dd68af46e23131e78d4eeb257b556815",
     "url": "/galarpokemon/index.html"
   },
   {
-    "revision": "2b1a6dc589d5e3058e16",
-    "url": "/galarpokemon/static/css/main.864bc128.chunk.css"
+    "revision": "81665ef3dc92b8f194bf",
+    "url": "/galarpokemon/static/css/main.5b3257c2.chunk.css"
   },
   {
-    "revision": "9e85a1ab67f34dd7e681",
-    "url": "/galarpokemon/static/js/2.7211df77.chunk.js"
+    "revision": "f1ea8cf379f1f602a8fc",
+    "url": "/galarpokemon/static/js/2.75ea105a.chunk.js"
   },
   {
-    "revision": "2b1a6dc589d5e3058e16",
-    "url": "/galarpokemon/static/js/main.8b21c2d5.chunk.js"
+    "revision": "81665ef3dc92b8f194bf",
+    "url": "/galarpokemon/static/js/main.4714e28e.chunk.js"
   },
   {
     "revision": "454b7f1fc50af3b4f518",

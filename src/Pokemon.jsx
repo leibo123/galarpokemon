@@ -5,7 +5,7 @@ class Pokemon extends Component {
       super(props);
     
       this.state = {
-        shiny: false
+        shiny: this.props.shiny
       };
     }
 
@@ -15,13 +15,17 @@ class Pokemon extends Component {
 
     renderStats = () => {
       return (
-          <p>{this.props.pokemon.id}<br/>
-          <strong>HP: </strong> {this.props.pokemon.HP}, 
-          <strong> Att: </strong> {this.props.pokemon.Att},
-          <strong> Def: </strong> {this.props.pokemon.Def},
-          <strong> SAtt: </strong> {this.props.pokemon.SAtt},
-          <strong> SDef: </strong> {this.props.pokemon.SDef},
-          <strong> Spd: </strong> {this.props.pokemon.Spd}</p>
+          <p>
+            <span>
+              <strong>HP: </strong> {this.props.pokemon.HP}, 
+              <strong> Att: </strong> {this.props.pokemon.Att},
+              <strong> Def: </strong> {this.props.pokemon.Def},
+              <strong> SAtt: </strong> {this.props.pokemon.SAtt},
+              <strong> SDef: </strong> {this.props.pokemon.SDef},
+              <strong> Spd: </strong> {this.props.pokemon.Spd}
+            </span><br/>
+            <strong>Total: </strong> {this.props.pokemon.HP + this.props.pokemon.Att + this.props.pokemon.Def + this.props.pokemon.SAtt + this.props.pokemon.SDef + this.props.pokemon.Spd}
+          </p>
       )
     }
 
@@ -39,13 +43,16 @@ class Pokemon extends Component {
     }
 
     render() {
-      const image = (this.state.shiny) ? this.props.image_shiny : this.props.image;
+      const image = (this.props.shiny) ? this.props.image_shiny : this.props.image;
       return (
       <div className="pokemon" onClick={this.toggleImageShiny}>
-          <h3>{this.props.pokemon.name}</h3>
-          <img key={image.id} src={image.src} alt={image.description} />
-          {this.renderTypeImages()}
-          {this.renderStats()}
+        <div className="inline-heading">
+          <span>{this.props.pokemon.id.substring(1)}</span>
+        </div> 
+        <h3>{this.props.pokemon.name}</h3>
+        <img key={image.id} src={image.src} alt={image.description} />
+        {this.renderTypeImages()}
+        {this.renderStats()}
       </div>
       )
     }

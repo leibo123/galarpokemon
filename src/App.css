@@ -39,22 +39,23 @@ h1 {
 
 .pokemon-list {
   margin: 0 auto;
-  padding-left: 10vw;
-  padding-right: 11vw;
-  padding-top: 220px;
+  padding-left: 8vw;
+  padding-right: 9vw;
+  padding-top: 240px;
   min-height: 101vh;
 }
 
 .pokemon {
   padding: 5px;
+  padding-top: 6px;
   padding-left: 18px;
   padding-right: 18px;
   background-color: #333333;
   opacity: 0.95;
   color: white;
-  width: 180px;
-  height: 285px;
-  margin: 25px;
+  width: 220px;
+  height: 256px;
+  margin: 15px;
   border-radius: 20px;
 }
 
@@ -96,4 +97,32 @@ img.type {
 
 .App-link {
   color: #09d3ac;
+}
+
+.pokemon span {
+  font-size: 14px;
+}
+
+#pokenumber {
+  text-align: left;
+}
+
+.inline-heading {
+  position: relative;
+  line-height: 1.5em;
+}
+
+.inline-heading span {
+  /* display: inline; */
+  float: left;
+  font-size: 12px;
+}
+
+.pokemon h3 {
+  font-size: 24px;
+  padding-right: 9px;
+}
+
+.btn-sm {
+  min-width: 142px !important;
 }

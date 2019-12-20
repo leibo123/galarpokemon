@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { DropdownButton, Dropdown, Button } from "react-bootstrap";
 import * as Constants from "./Constants.js";
 import Pokemon from "./Pokemon";
 import RainbowHeader from "./RainbowHeader";
+
+const indices = [...Array(400).keys()];
 
 class FilteredList extends Component {
     constructor(props) {
@@ -12,7 +14,8 @@ class FilteredList extends Component {
         search: "",
         type: "Any",
         highestStat: "Any",
-        sortby: "Number"
+        sortby: "Number",
+        shinylist: [],
       };
     }
   
@@ -59,9 +62,34 @@ class FilteredList extends Component {
       return (this.state.sortby === "statDescending") ? totalStat2 - totalStat1 : totalStat1 - totalStat2;
     }
 
+    updateShinyList = (index) => {
+      let newlist = this.state.shinylist;
+      let i = this.state.shinylist.indexOf(index);
+      if (i !== -1) {
+        newlist.splice(i, 1);
+      } else {
+        newlist.push(index);
+      }
+      this.setState({shinylist: newlist});
+    }
+
+    toggleAllShiny = () => {
+      const curState = document.getElementById("shinytoggle").innerHTML;
+      if (curState === "Show All Shiny") {
+        document.getElementById("shinytoggle").innerHTML = "Show All Non-Shiny";
+        this.setState({shinylist: indices});
+      } else {
+        document.getElementById("shinytoggle").innerHTML = "Show All Shiny";
+        this.setState({shinylist: []});
+      }
+    }
+
     render() {
+      console.log("hi");
       const filtered_result = this.props.items.filter(this.filterAndSearch);
       const filtered_sorted_result = filtered_result.sort(this.sortBySelectedType);
+      const shinylist = this.state.shinylist;
+      console.log(shinylist);
         return (
         <div className="filter-list">
           <div className="pinned-content">
@@ -85,18 +113,18 @@ class FilteredList extends Component {
             </DropdownButton>
             <input type="text" placeholder="Search by Name" onChange={this.onSearch} />
             <h5>Showing <strong>{this.state.type}</strong> Type Pokemon with <strong>{Constants.POKEMON_STATS_FULL[this.state.highestStat]}</strong> as highest base stat, sorted by <strong>{Constants.POKEMON_SORT_CRITERIA[this.state.sortby]}</strong>.</h5>
-            <p>Tip: click on a Pokemon to toggle its shiny form!</p>
+            <p>Tip: click on a Pokemon to toggle its shiny form! &nbsp; &nbsp; &nbsp; <Button variant="secondary" size="sm" id="shinytoggle" onClick={this.toggleAllShiny}>Show All Shiny</Button></p>
           </div>
           <div className="pokemon-list">
             <ul>
                 {filtered_sorted_result.map(pokemon => {
                     let index = parseInt(pokemon.id.substring(1)) - 1;
-                    return <li key={index}><Pokemon pokemon={pokemon} image={this.props.images[index]} image_shiny={this.props.images_shiny[index]} 
+                    return <li key={index} onClick={this.updateShinyList.bind(this, index)}><Pokemon pokemon={pokemon} image={this.props.images[index]} image_shiny={this.props.images_shiny[index]} shiny={shinylist.indexOf(index) !== -1}
                     image_type1={this.props.images_type[pokemon.type1]} 
                     image_type2={(pokemon.type2 === null) ? null : this.props.images_type[pokemon.type2]}/></li>
                 })}
             </ul>
-            {(filtered_result.length > 1) ? (<p></p>) : (<h4>No Pokemon Found</h4>)}
+            {(filtered_result.length > 0) ? (<p></p>) : (<h4>No Pokemon Found</h4>)}
           </div>
         </div>
         );
