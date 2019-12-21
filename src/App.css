@@ -17,7 +17,9 @@ li {
 }
 
 .pinned-content {
-  padding-top: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 15px;
   left: 0;
   right: 0;
   position: fixed;
@@ -29,20 +31,30 @@ li {
 h1 { 
   font-family: 'Fredoka One', cursive;
   cursor: pointer;
+  font-size: 32px;
 }
 .pinned-content h5, .pinned-content h1 {
   padding: 10px;
 }
 .pinned-content h5 {
   padding-bottom: 0px;
+  font-size: 18px;
+}
+
+.pinned-content p {
+  font-size: 14.5px;
+  margin-bottom: 12px;
 }
 
 .pokemon-list {
   margin: 0 auto;
-  padding-left: 8vw;
-  padding-right: 9vw;
-  padding-top: 240px;
+  padding-left: min(100px, 5vw);
+  padding-right: min(100px, 5vw);
+  padding-top: 190px;
   min-height: 101vh;
+}
+ul {
+  padding-left: 0px;
 }
 
 .pokemon {
@@ -77,7 +89,7 @@ img.type {
 
 .dropdown {
   display: inline;
-  margin: 40px;
+  margin: 10px !important;
 }
 
 .App-logo {
@@ -120,9 +132,147 @@ img.type {
 
 .pokemon h3 {
   font-size: 24px;
-  padding-right: 9px;
+  padding-right: 12px;
 }
 
 .btn-sm {
-  min-width: 142px !important;
+  min-width: 145px !important;
+}
+
+.heart {
+  color: white;
+  font-size: 18px;
+  float: right;
+  margin-left: 71px;
+  margin-top: 18px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  text-align: center;
+}
+
+.pokemon-li  {
+  position: relative;
+  cursor: pointer;
+}
+
+#ascendingToggle {
+  min-width: 95px !important;
+  margin-left: -6px;
+  margin-right: 40px;
+}
+
+input {
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+#clearCache {
+  position: absolute;
+  margin-left: 30vw;
+}
+
+#favoritestoggle, #shinytoggle {
+  max-height: 28px;
+  line-height: 14px;
+  margin-bottom: 2px;
+}
+
+#sortby-wrapper, #show-wrapper, .textbreak-wrapper {
+  display: inline-block;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mobile-size-filters {
+  display: none;
+}
+
+#collapse-wrapper {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+#dropdownbytype {
+  display: inline-block;
+  transform: none !important;
+}
+
+
+@media screen and (max-width: 847px) {
+  .pokemon-list {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 220px;
+  }
+  .dropdown {
+    line-height: 40px;
+  }
+
+  #clearCache {
+    display: none;
+  }
+  h1 {
+    padding-bottom: 2px !important;
+  }
+  input {
+    margin-top: 4px;
+  }
+  .pinned-content h5 {
+    font-size: 16px;
+  }
+  .dropdown-item {
+    height: 18px;
+    line-height: 14px;
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width: 818px) {
+  .pokemon-list {
+    padding-top: 245px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .pokemon-list {
+    padding-top: 265px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .mobile-size-filters {
+    display: initial;
+  }
+  .regular-size-filters {
+    display: none;
+  }
+  .pokemon {
+    width: 240px;
+  }
+  .pokemon-list {
+    padding-top: 110px;
+  }
+
+  #ascendingToggle {
+    margin-right: 0px;
+  }
+  input {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .pokemon-list {
+    padding-top: 150px;
+  }
 }

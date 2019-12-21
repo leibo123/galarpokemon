@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import FilteredList from "./FilteredList";
 import {POKEMONS, POKEMON_IMAGES, POKEMON_IMAGES_SHINY, POKEMON_TYPE_IMAGES} from "./Constants";
-
 
 function App() {
   return (

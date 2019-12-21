@@ -16,10 +16,12 @@ class Pokemon extends Component {
     renderStats = () => {
       return (
           <p>
-            <span>
+            <span className="textbreak-wrapper">
               <strong>HP: </strong> {this.props.pokemon.HP}, 
               <strong> Att: </strong> {this.props.pokemon.Att},
               <strong> Def: </strong> {this.props.pokemon.Def},
+            </span>
+            <span className="textbreak-wrapper">
               <strong> SAtt: </strong> {this.props.pokemon.SAtt},
               <strong> SDef: </strong> {this.props.pokemon.SDef},
               <strong> Spd: </strong> {this.props.pokemon.Spd}

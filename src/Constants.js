@@ -2,7 +2,7 @@
 export const POKEMON_TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water", "Grass", "Electric", "Psychic", "Ice", "Dragon", "Dark", "Fairy"];
 export const POKEMON_STATS_CONCISE = ["HP", "Att", "Def", "SAtt", "SDef", "Spd"];
 export const POKEMON_STATS_FULL = {"Any": "Any", "HP": "Hit Points", "Att": "Attack", "Def": "Defense", "SAtt": "Special Attack", "SDef": "Special Defense", "Spd": "Speed"}
-export const POKEMON_SORT_CRITERIA = {"Number": "Number", "statAscending": "Total Stats (low -> high)", "statDescending": "Total Stats (high -> low)"}
+export const POKEMON_SORT_CRITERIA = {"Number": "Number", "totalStats": "Total Stats", "hpStat": "Hit Points", "attStat": "Attack", "defStat": "Defense", "sattStat": "Special Attack", "sdefStat": "Special Defense", "spdStat": "Speed"}
 
 let images = [];
 let images_shiny = [];

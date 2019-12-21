@@ -6,20 +6,21 @@ class RainbowHeader extends Component {
     
       this.state = {
         colorIndex: 1,
-        color: "orange"
+        color: (localStorage.getItem('rainbowheader-color') !== null) ? localStorage.getItem('rainbowheader-color') : "orange"
       };
     }
 
     changeColor = () => {
-        const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+        const colors = ["#ff4949", "orange", "yellow", "green", "#5677e6", "#b76eda"];
         this.setState({colorIndex: (this.state.colorIndex + 1) % 6})
         this.setState({color: colors[this.state.colorIndex]});
+        localStorage.setItem('rainbowheader-color', colors[this.state.colorIndex]);
     }
 
     render() {
         return (
-            <div className="rainbowHeader" onClick={this.changeColor}>
-                <h1 style={{color: this.state.color}}>{this.props.text}</h1>
+            <div className="rainbowHeader">
+                <h1 className="unselectable" style={{color: this.state.color}}>{this.props.text}</h1>
             </div>
         )
     }
