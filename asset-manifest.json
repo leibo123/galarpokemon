@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/galarpokemon/static/css/main.2301e000.chunk.css",
-    "main.js": "/galarpokemon/static/js/main.2b3827c9.chunk.js",
-    "main.js.map": "/galarpokemon/static/js/main.2b3827c9.chunk.js.map",
+    "main.js": "/galarpokemon/static/js/main.cfca0156.chunk.js",
+    "main.js.map": "/galarpokemon/static/js/main.cfca0156.chunk.js.map",
     "runtime-main.js": "/galarpokemon/static/js/runtime-main.58ce681f.js",
     "runtime-main.js.map": "/galarpokemon/static/js/runtime-main.58ce681f.js.map",
     "static/js/2.5d45f248.chunk.js": "/galarpokemon/static/js/2.5d45f248.chunk.js",
     "static/js/2.5d45f248.chunk.js.map": "/galarpokemon/static/js/2.5d45f248.chunk.js.map",
     "index.html": "/galarpokemon/index.html",
-    "precache-manifest.b23588d6a25763bb2fcbbb105926efd2.js": "/galarpokemon/precache-manifest.b23588d6a25763bb2fcbbb105926efd2.js",
+    "precache-manifest.70401376d96bb928c1ef5ca3cc96e91e.js": "/galarpokemon/precache-manifest.70401376d96bb928c1ef5ca3cc96e91e.js",
     "service-worker.js": "/galarpokemon/service-worker.js",
     "static/css/main.2301e000.chunk.css.map": "/galarpokemon/static/css/main.2301e000.chunk.css.map",
     "static/media/App.css": "/galarpokemon/static/media/pokemon_wallpaper.3c15d060.jpg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.58ce681f.js",
     "static/js/2.5d45f248.chunk.js",
     "static/css/main.2301e000.chunk.css",
-    "static/js/main.2b3827c9.chunk.js"
+    "static/js/main.cfca0156.chunk.js"
   ]
 }
