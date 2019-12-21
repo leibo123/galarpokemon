@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/galarpokemon/static/css/main.5b3257c2.chunk.css",
-    "main.js": "/galarpokemon/static/js/main.4714e28e.chunk.js",
-    "main.js.map": "/galarpokemon/static/js/main.4714e28e.chunk.js.map",
+    "main.css": "/galarpokemon/static/css/main.beccc819.chunk.css",
+    "main.js": "/galarpokemon/static/js/main.b91b324b.chunk.js",
+    "main.js.map": "/galarpokemon/static/js/main.b91b324b.chunk.js.map",
     "runtime-main.js": "/galarpokemon/static/js/runtime-main.58ce681f.js",
     "runtime-main.js.map": "/galarpokemon/static/js/runtime-main.58ce681f.js.map",
-    "static/js/2.75ea105a.chunk.js": "/galarpokemon/static/js/2.75ea105a.chunk.js",
-    "static/js/2.75ea105a.chunk.js.map": "/galarpokemon/static/js/2.75ea105a.chunk.js.map",
+    "static/js/2.868bcffe.chunk.js": "/galarpokemon/static/js/2.868bcffe.chunk.js",
+    "static/js/2.868bcffe.chunk.js.map": "/galarpokemon/static/js/2.868bcffe.chunk.js.map",
     "index.html": "/galarpokemon/index.html",
-    "precache-manifest.27d70cadfe029dcfaff095d3d6e6c88e.js": "/galarpokemon/precache-manifest.27d70cadfe029dcfaff095d3d6e6c88e.js",
+    "precache-manifest.211c39cf6d38a0e82ebb67a3a13c599a.js": "/galarpokemon/precache-manifest.211c39cf6d38a0e82ebb67a3a13c599a.js",
     "service-worker.js": "/galarpokemon/service-worker.js",
-    "static/css/main.5b3257c2.chunk.css.map": "/galarpokemon/static/css/main.5b3257c2.chunk.css.map",
+    "static/css/main.beccc819.chunk.css.map": "/galarpokemon/static/css/main.beccc819.chunk.css.map",
     "static/media/logo.svg": "/galarpokemon/static/media/logo.25bf045c.svg",
     "static/media/App.css": "/galarpokemon/static/media/pokemon_wallpaper.3c15d060.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.58ce681f.js",
-    "static/js/2.75ea105a.chunk.js",
-    "static/css/main.5b3257c2.chunk.css",
-    "static/js/main.4714e28e.chunk.js"
+    "static/js/2.868bcffe.chunk.js",
+    "static/css/main.beccc819.chunk.css",
+    "static/js/main.b91b324b.chunk.js"
   ]
 }
